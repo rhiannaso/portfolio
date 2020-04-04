@@ -44,17 +44,30 @@ a.links:hover {
 }
 
 #content {
-    display: flex;
     padding: 0px 20px;
 }
 
-#image {
+#s1-image {
     padding: 10px 30px 10px 10px;
 }
 
-#image img {
+#s1-image img {
     width: 250px;
     border: 5px solid black;
+}
+
+#s2-image {
+    padding: 10px 10px 10px 30px;
+}
+
+#s2-image img {
+    width: 300px;
+    border: 5px solid black;
+}
+
+.section {
+    padding: 10px;
+    display: flex;
 }
 
 hr {
