@@ -7,9 +7,13 @@ body {
 }
 
 #header {
-    padding: 10px 30px;
+    padding: 10px 0px;
     background-color: #FFF;
-    width: 100%;
+    width: 100vw;
+}
+
+h1 {
+    padding-left: 30px;
 }
 
 #nav-bar {
@@ -35,7 +39,7 @@ body {
 
 a.links:hover {
     background-color: #507A77;
-    color: white !important;
+    color: #FFF !important;
 }
 
 #content {
@@ -48,7 +52,7 @@ a.links:hover {
 
 #s1-image img {
     width: 250px;
-    border: 4px solid black;
+    border: 4px solid #000;
 }
 
 #s2-image {
@@ -57,7 +61,7 @@ a.links:hover {
 
 #s2-image img {
     width: 300px;
-    border: 4px solid black;
+    border: 4px solid #000;
 }
 
 .section {
@@ -71,4 +75,60 @@ hr {
 
 h2 {
     color: #2F4F4D;
+}
+
+/* images.html */
+
+#img-container {
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}
+
+.caption {
+    padding: 10px 0px;
+}
+
+.img-child img {
+    width: 350px;
+    border: 4px solid #000;
+}
+
+/* videos.html */
+
+
+#vid-container {
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 560px));
+}
+
+.vid-caption {
+    background-color: #BFD6D4;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #507A77;
+    border-radius: 10px;
+}
+
+.vid-child iframe {
+    width: 560px;
+}
+
+/* projects.html */
+
+.proj-image {
+    width: 125px;
+    padding: 10px 30px 10px 10px;
+}
+
+.section a {
+    color: #507A77;
+    font-style: italic;
 }
