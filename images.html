@@ -6,85 +6,115 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
         <title>Discover More</title>
     </head>
-    <body>
+    <body onscroll="prepScroll()">
         <div id="header">
             <h1>Rhianna So's Portfolio</h1>
         </div>
         <div id="nav-bar">
             <a class="links" href="https://rhiannaso.github.io/portfolio/">Home</a>
-            <a class="links" href="https://rhiannaso.github.io/portfolio/images.html">Images</a>
+            <a class="links curr" href="https://rhiannaso.github.io/portfolio/images.html">Images</a>
             <a class="links" href="https://rhiannaso.github.io/portfolio/videos.html">Videos</a>
             <a class="links" href="https://rhiannaso.github.io/portfolio/projects.html">Projects</a>
         </div>
         <div id="content">
             <div id="img-container">
                 <div class="img-child">
-                    <img src="images/golden_gate.jpg"><br>
+                    <img src="images/golden_gate.jpg" id="01" onclick="enlarge(this)">
                     <div class="caption">
                         I took this photo when my family and I visited 
                         San Francisco over winter break this year.
                     </div>
                 </div>
+                <div id="box01" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big01">
+                </div>
                 <div class="img-child">
-                    <img src="images/point_lobos.jpg">
+                    <img src="images/point_lobos.jpg" id="02" onclick="enlarge(this)">
                     <div class="caption">
                         When my family took a trip along California's
                         coast, I took this photo at Point Lobos.
                     </div>
                 </div>
+                <div id="box02" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big02">
+                </div>
                 <div class="img-child">
-                    <img src="images/rcmh.jpg">
+                    <img src="images/rcmh.jpg" id="03" onclick="enlarge(this)">
                     <div class="caption">
                         I took this photo back in 2017 when I visited
                         New York before college.
                     </div>
                 </div>
+                <div id="box03" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big03">
+                </div>
                 <div class="img-child">
-                    <img src="images/iv.jpg">
+                    <img src="images/iv.jpg" id="04" onclick="enlarge(this)">
                     <div class="caption">
                         During Welcome Week this past year, I watched
                         the sunrise with my friend and took this photo.
                     </div>
                 </div>
+                <div id="box04" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big04">
+                </div>
                 <div class="img-child">
-                    <img src="images/lone_tree.jpg">
+                    <img src="images/lone_tree.jpg" id="05" onclick="enlarge(this)">
                     <div class="caption">
                         This photo was taken when my family and I drove
                         through Pebble Beach's scenic 17-mile drive.
                     </div>
                 </div>
+                <div id="box05" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big05">
+                </div>
                 <div class="img-child">
-                    <img src="images/new_york.jpg">
+                    <img src="images/new_york.jpg" id="06" onclick="enlarge(this)">
                     <div class="caption">
                         I took this photo from the Top of the Rock in 
                         New York. The view was pretty amazing!
                     </div>
                 </div>
+                <div id="box06" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big06">
+                </div>
                 <div class="img-child">
-                    <img src="images/laguna.jpg">
+                    <img src="images/laguna.jpg" id="07" onclick="enlarge(this)">
                     <div class="caption">
                         When my friends and I visited Tablerock Beach
                         in Laguna, I captured this photo.
                     </div>
                 </div>
+                <div id="box07" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big07">
+                </div>
                 <div class="img-child">
-                    <img src="images/grand_canyon.jpg">
+                    <img src="images/grand_canyon.jpg" id="08" onclick="enlarge(this)">
                     <div class="caption">
                         During last year's winter break, I took this
                         picture while on vacation with my family.
                     </div>
                 </div>
+                <div id="box08" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big08">
+                </div>
                 <div class="img-child">
-                    <img src="images/san_diego.jpg">
+                    <img src="images/san_diego.jpg" id="09" onclick="enlarge(this)">
                     <div class="caption">
                         I visited my friends in San Diego during last 
                         year's spring break (what a different time it 
                         was!) and took this picture.
                     </div>
                 </div>
+                <div id="box09" class="lightbox" onclick="close(this)">
+                    <img class="lightbox-content" id="big09">
+                </div>
             </div>
         </div>
+        <button id="scrollButton" onclick="scrollToTop()">Scroll to Top</button>
     </body>
 </html>

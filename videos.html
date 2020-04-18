@@ -6,23 +6,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
         <title>Fun Videos</title>
     </head>
-    <body>
+    <body onscroll="prepScroll()">
         <div id="header">
             <h1>Rhianna So's Portfolio</h1>
         </div>
         <div id="nav-bar">
             <a class="links" href="https://rhiannaso.github.io/portfolio/">Home</a>
             <a class="links" href="https://rhiannaso.github.io/portfolio/images.html">Images</a>
-            <a class="links" href="https://rhiannaso.github.io/portfolio/videos.html">Videos</a>
+            <a class="links curr" href="https://rhiannaso.github.io/portfolio/videos.html">Videos</a>
             <a class="links" href="https://rhiannaso.github.io/portfolio/projects.html">Projects</a>
         </div>
         <div id="content">
             <div id="vid-container">
                 <div class="vid-child">
                     <iframe height="315" src="https://www.youtube.com/embed/E-6xk4W6N20" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <br>
                     <div class="vid-caption">
                         I don't remember how I even found this video, but it's 
                         so much fun to watch!
@@ -67,5 +68,6 @@
                 </div>
             </div>
         </div>
+        <button id="scrollButton" onclick="scrollToTop()">Scroll to Top</button>
     </body>
 </html>
