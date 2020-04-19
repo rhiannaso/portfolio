@@ -35,10 +35,16 @@ h1 {
     width: 7%;
     height: 100%;
     text-align: center;
+    border-bottom: 2px solid transparent;
 }
 
 a.links:hover {
-    background-color: #507A77;
+    background-color: #8FBDB9;
+    border-bottom:2px solid #507A77;
+}
+
+.curr {
+    background-color: #507A77 !important;
     color: #FFF !important;
 }
 
@@ -67,6 +73,8 @@ a.links:hover {
 .section {
     padding: 10px;
     display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 hr {
@@ -88,13 +96,22 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
+.img-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .caption {
     padding: 10px 0px;
+    text-align: center;
 }
 
 .img-child img {
     width: 350px;
     border: 4px solid #000;
+    cursor: pointer;
 }
 
 /* videos.html */
@@ -107,6 +124,13 @@ h2 {
     justify-content: center;
     grid-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 560px));
+}
+
+.vid-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .vid-caption {
@@ -131,4 +155,47 @@ h2 {
 .section a {
     color: #507A77;
     font-style: italic;
+}
+
+/* scroll button */
+
+#scrollButton {
+    background-color: #507A77;
+    color: #FFF;
+    border: 1px solid #2F4F4D;
+    padding: 8px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+/* lightbox */
+
+.lightbox {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index: 1;
+    overflow: auto;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    width: 80%;
+    margin: auto;
+    max-width: 750px;
+    border: 5px solid #FFF;
+}
+
+@media only screen and (max-width: 750px){
+    .lightbox-content { width: 90%; }
 }
