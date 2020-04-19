@@ -73,6 +73,8 @@ a.links:hover {
 .section {
     padding: 10px;
     display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 hr {
