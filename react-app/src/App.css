@@ -43,6 +43,19 @@ h2 {
   padding: 10px;
 }
 
+.scrollButton {
+  background-color: #507A77;
+  color: #FFF;
+  border: 1px solid #2F4F4D;
+  padding: 8px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+}
+
 .tab {
   width: 7%;
   height: 100%;

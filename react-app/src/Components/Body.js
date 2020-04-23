@@ -5,16 +5,47 @@ import Videos from './Videos';
 import Projects from './Projects';
 
 export class Body extends Component {
+  constructor()
+  {
+    super();
+    this.state = {
+      display: 'none'
+    }
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.prepScroll)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.prepScroll)
+  }
+  prepScroll = () => {
+    var windowHeight = window.innerHeight;
+    var amtScrolled = window.pageYOffset;
+    var percentScrolled = (amtScrolled/windowHeight)*100;
+
+    if(percentScrolled > 25) {
+      this.setState({
+        display: 'block'
+      });
+    } else {
+      this.setState({
+        display: 'none'
+      });
+    }
+  }
+  scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   displayContent = () => {
     var activeTab = this.props.activeTab
     if(activeTab === 1)
-      return <Home/>
+      return <Home display={this.state.display} scrollToTop={this.scrollToTop}/>
     else if(activeTab === 2) 
-      return <Images/>
+      return <Images display={this.state.display} scrollToTop={this.scrollToTop}/>
     else if(activeTab === 3)
-      return <Videos/>
+      return <Videos display={this.state.display} scrollToTop={this.scrollToTop}/>
     else
-      return <Projects/>
+      return <Projects display={this.state.display} scrollToTop={this.scrollToTop}/>
   }
   render() {
     return(
