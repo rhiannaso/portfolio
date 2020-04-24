@@ -3,6 +3,10 @@ import Portrait from '../Images/image.jpg';
 import School from '../Images/ucsb.jpg';
 
 export class Home extends Component {
+  componentDidMount(){
+    document.title = 'Rhianna So\'s Portfolio';
+  }
+
   render() {
     return (
       <div>

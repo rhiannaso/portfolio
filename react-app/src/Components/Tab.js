@@ -16,7 +16,7 @@ export class Tab extends Component {
   render() {
     return(
       <div className='tab' style={this.addStyling()} onClick={this.props.changeTab.bind(this, this.props.tab.id)}>
-        <div>{this.props.tab.title}</div>
+        {this.props.tab.title}
       </div>
     );
   }

@@ -21,22 +21,18 @@ export class App extends Component {
       {
         id: 1,
         title: 'Home',
-        src: 'https://google.com'
       },
       {
         id: 2,
         title: 'Images',
-        src: 'https://youtube.com'
       },
       {
         id: 3,
         title: 'Videos',
-        src: 'https://wikipedia.org'
       },
       {
         id: 4,
         title: 'Projects',
-        src: 'https://github.com'
       },
     ]
     return(

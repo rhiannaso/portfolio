@@ -4,6 +4,10 @@ import Piano from '../Images/piano.png';
 import Hangman from '../Images/hangman.png';
 
 export class Projects extends Component {
+  componentDidMount(){
+    document.title = 'Past Projects';
+  }
+
   render() {
     return (
       <div>

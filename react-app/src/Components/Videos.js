@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 export class Videos extends Component {
+  componentDidMount(){
+    document.title = 'Fun Videos';
+  }
+
   render() {
     return (
       <div>

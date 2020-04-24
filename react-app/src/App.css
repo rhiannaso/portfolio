@@ -59,6 +59,7 @@ h2 {
 .tab {
   width: 7%;
   height: 100%;
+  padding: 8px;
   text-align: center;
   background-color: #A9DBD7;
   border-bottom: 2px solid transparent;
@@ -130,7 +131,7 @@ h2 {
 /* lightbox */
 
 .lightbox {
-  display: none;
+  display: grid;
   top: 0;
   left: 0;
   width: 100%;
@@ -144,7 +145,7 @@ h2 {
 }
 
 .lightbox-content {
-  width: 80%;
+  width: 85%;
   margin: auto;
   max-width: 750px;
   border: 5px solid #FFF;
